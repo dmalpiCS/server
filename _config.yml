@@ -1,0 +1,58 @@
+title: "DVWA Security Monitoring Project"
+description: "Comprehensive cybersecurity training using DVWA, Wazuh, and Suricata"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.github.io
+
+# Theme
+theme: minima
+remote_theme: pages-themes/minimal@v0.2.0
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Navigation
+header_pages:
+  - index.md
+  - set0-overview.md
+  - set1-deployment.md
+  - set2-wazuh.md
+  - set3-suricata.md
+  - set4-attacks.md
+  - set5-hunting.md
+  - pentester-guide.md
+
+# Collections
+collections:
+  guides:
+    output: true
+    permalink: /:collection/:name/
+
+# Markdown
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Exclude files
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+
+# Site settings
+show_excerpts: true
+author: Cybersecurity Instructor
+email: instructor@example.edu
+
+# GitHub Pages
+github:
+  repository_nwo: yourusername/repo-name
